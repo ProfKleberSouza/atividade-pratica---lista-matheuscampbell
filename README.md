@@ -10,24 +10,19 @@ typedef struct Produto{
   float valor;
   int quantidade;
 }Produto;
-```
-
-```c
 // DEFINICAO DO TIPO CELULA
 typedef struct Celula{
   Produto dado;
   struct Celula *prox;
 }Celula;
-```
 
-```c
 // DEFINICAO DO TIPO LISTA
 typedef struct Lista{
   Celula *inicio;
   Celula *fim;
   int tam;
 }Lista;
-```
+
 Nossa estrutura lista será utilizada para desenvolver um sistema de controle de estoque com as seguintes funcionlidades:
  - CRUD de Produto (Create, Read, Update, Delete)
  - Relatórios para verificar o status da lista, mostrando a quantidade de produtos, produtos com estoque baixo, produtos ordenados por valor, por quantidade, por nome, etc...
